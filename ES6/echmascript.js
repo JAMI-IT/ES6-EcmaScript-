@@ -20,17 +20,17 @@ fruit.set(pinappla,700);
 console.log(fruit);
 
 
-variable
-String
-CSSConditionRule
-for each
-arrow functoin 
-function
-events handeling event
-destructuring
-import 
-asynchrouns
-map
+// variable
+// String
+// CSSConditionRule
+// for each
+// arrow functoin 
+// function
+// events handeling event
+// destructuring
+// import 
+// asynchrouns
+// map
 
 
 
