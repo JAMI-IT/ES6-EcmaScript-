@@ -1,5 +1,3 @@
-
-
 // The let keyword was introduced in ES6 (2015).
 
 // Variables defined with let cannot be Redeclared.
@@ -10,3 +8,6 @@
 
 let Car_name ='BMW'
 console.log(Car_name);
+
+let text ="Hello How Are U";
+console.log(text.split(""));

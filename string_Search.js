@@ -2,9 +2,8 @@ let text="I am in the professional in java script";
 
 //--------------===-===============lastindexof return thee last index of a specified text------------
 console.log(text.lastIndexOf("java"));
-
 //-------------------------------both accept the second index in the parameter 
-console.log(text.indexOf("am",14));
+console.log(text.indexOf("am",12));
 
 //-------------------------------serach operator .................................
 console.log(text.search("script"));

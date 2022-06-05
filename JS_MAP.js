@@ -1,37 +1,63 @@
+//------------Creating the new map vaiable---------------------------
+
+console.log("---------------------------------------------------------------");
+const person=new Map(
+    [
+        ["Jami",21],
+        ["Humayu",22],
+        ["Shahjahan",28]
+    ]
+)
+console.log(person);
 
 
-const mymap=new Map();
+//----------------Map() Operation By using the set Operator================
 
-const key1="JAMI",key2={},key3= function(){};
+console.log("---------------------------------------------------------------");
+const fruit=new Map();
 
-mymap.set(key1,"THis Is key one ");
-mymap.set(key2,"THis Array ");
-mymap.set(key3,"THis is Function");
-console.log(mymap);
+fruit.set("Apple",300);
+fruit.set("Orange",900);
+fruit.set("Mango",600);
+fruit.set("BAnana",700);
+let v=fruit.get("Mango");
+console.log(v);
 
-let value=mymap.get(key1);
-console.log(value);
+//-----------We can use set method to change the map value=================
+fruit.set("Orange",100);
+console.log(fruit);
 
-console.log(mymap.get('JAMI'));
+console.log("---------------------------------------------------------------");
+console.log(fruit.size);
 
-console.log(mymap.size);
-
-const my_MAP=new Map(
-[
-["apple",500],
-["Orange",200],
-["Pinapple",300]
-]
-);
+//--------------------------has Operator to check if the value is exist in the map=------------\
+console.log("---------------------------------------------------------------");
+fruit.delete("BAnana");
+console.log(fruit.has("BAnana"));
 
 
-let text1="";
-my_MAP.forEach(function(value,key){
-    text1 +=key +" = "+value;
+//--------------------------For Each Operator is used to Display the Map Data-------------------
+
+console.log("---------------------------------------------------------------");
+fruit.forEach(function(value,key)
+{
+    console.log(key+" = "+value);
 })
-console.log(text1);
+console.log("---------------------------------------------------------------");
 
-my_MAP.delete("apple");
-console.log(my_MAP.has("apple"));
+let sum=0;
+fruit.forEach(function(value)
+{
+sum=sum+value;
+})
+console.log(sum);
+
+console.log("---------------------------------------------------------------");
+
+let text="";
+for (const x of fruit.entries() ){
+    text +=x;
+}
+console.log(text);
 
 
