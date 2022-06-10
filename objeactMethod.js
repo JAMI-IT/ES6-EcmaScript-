@@ -15,28 +15,23 @@ person.FullName();
 console.log(person);
 
 //---------We Can Convert the object into array by using the obejct.value Operator ---------------
-
 const myarray=Object.values(person);
 console.log(myarray);
 
 const string=JSON.stringify(person);
 console.log(string);
 
-// const vari=JSON.parse(person);
-// console.log(vari);
-
 const person1={
-
-    F_Name : "Abdul Rehman",
-    L_NAme : "Jami",
+    F_Name : "Shahjahan",
+    L_NAme : " Mukhtar",
     Age:"",
-    set ag(a){
-        return this.Age=a;
+    // set ag(a){
+    //     return this.Age=a;
+    // }
+    get Fulname()
+    {
+        console.log("NAME ::  " +this.F_Name+this.L_NAme+" Age :: "+this.Age);
     }
-   
 };
-
-person1.ag=23;
-
-console.log(person1.Age);
-
+person1.Age=23;
+console.log(person1.Fulname);
