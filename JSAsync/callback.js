@@ -1,11 +1,26 @@
-setTimeout(function(){myFunction(console.log("Ilove you"))},3000);
+// setTimeout(function(){myFunction(console.log("Ilove you"))},3000);
 
-function myFunction() {
-  console.log("Hellow world");
+// function myFunction() {
+//   console.log("Hellow world");
+// }
+
+// function disply(text)
+// {
+//   console.log(text);
+// }
+
+setTimeout(myFirst,3000);
+function myDisplayer(some) {
+  console.log(some);
 }
 
-function disply(text)
-{
-  console.log(text);
+function myFirst() {
+  myDisplayer("Hello");
 }
 
+function mySecond() {
+  myDisplayer("Goodbye");
+}
+
+myFirst();
+mySecond();
