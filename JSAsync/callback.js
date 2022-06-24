@@ -9,7 +9,7 @@
 //   console.log(text);
 // }
 
-setTimeout(myFirst,3000);
+setTimeout(myFirst,5000);
 function myDisplayer(some) {
   console.log(some);
 }

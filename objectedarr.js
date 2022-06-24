@@ -4,8 +4,9 @@ const cars = [
     {type:"BMW", year:2010}
   ]; 
 
-//   cars.sort(function(a,b){return a.year-b.year})
-//   console.log(cars);
+  cars.sort(function(a,b){return a.year-b.year})
+  console.log(cars); 
+  
 
 cars.sort(function(a,b){
 let x=a.type.toLowerCase;

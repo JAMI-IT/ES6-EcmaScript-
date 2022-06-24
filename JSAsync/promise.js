@@ -13,10 +13,8 @@ function(myresovle,myreject)
     else{
       myreject("Error");
    }
-   
   }
    );
-
     mypromis.then(
       function(value){disply(value)},
       function(error){disply(error)}
